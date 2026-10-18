@@ -1,0 +1,82 @@
+/* =========================================
+   MODULE PLACEHOLDERS STYLES
+   ========================================= */
+
+.placeholder-view {
+  padding: var(--space-4) 0;
+}
+
+.placeholder-header {
+  margin-bottom: var(--space-8);
+  border-bottom: 1px solid var(--border-medium);
+  padding-bottom: var(--space-6);
+}
+
+.placeholder-header__badge {
+  margin-bottom: var(--space-2);
+}
+
+.placeholder-header__title {
+  margin-bottom: var(--space-3);
+}
+
+.placeholder-header__desc {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  max-width: 760px;
+}
+
+.placeholder-panel {
+  padding: var(--space-8);
+  margin-bottom: var(--space-8);
+}
+
+.placeholder-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
+
+.placeholder-item {
+  padding: var(--space-4);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 0;
+}
+
+.placeholder-item__title {
+  font-family: var(--font-epic);
+  font-size: 1rem;
+  color: var(--gold-bright);
+  margin-bottom: var(--space-2);
+}
+
+.placeholder-item__text {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.placeholder-callout {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+  padding: var(--space-4);
+  background: rgba(43, 179, 240, 0.05);
+  border: 1px solid var(--runic-dim);
+  border-left: 4px solid var(--runic-cyan);
+  margin-top: var(--space-6);
+}
+
+.placeholder-callout__icon {
+  color: var(--runic-cyan);
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.placeholder-callout__text {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}

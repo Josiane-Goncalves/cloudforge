@@ -1,0 +1,139 @@
+/* =========================================
+   HOME / SANCTUM STYLES
+   ========================================= */
+
+.home-hero {
+  padding: var(--space-8) var(--space-6);
+  margin-bottom: var(--space-8);
+  border: 1px solid var(--border-medium);
+  background: 
+    linear-gradient(180deg, rgba(19, 27, 41, 0.9) 0%, rgba(13, 18, 28, 0.95) 100%),
+    radial-gradient(circle at 50% 0%, rgba(212, 155, 40, 0.12) 0%, transparent 70%);
+  position: relative;
+  overflow: hidden;
+}
+
+.home-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold-primary), transparent);
+}
+
+.home-hero__content {
+  max-width: 800px;
+}
+
+.home-hero__badge {
+  margin-bottom: var(--space-3);
+}
+
+.home-hero__title {
+  margin-bottom: var(--space-4);
+  color: var(--text-primary);
+}
+
+.home-hero__subtitle {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-6);
+}
+
+.home-hero__actions {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+/* Feature Portals */
+.portal-card {
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 260px;
+}
+
+.portal-card__header {
+  margin-bottom: var(--space-3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.portal-card__title {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-2);
+}
+
+.portal-card__desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin-bottom: var(--space-6);
+}
+
+.portal-card__footer {
+  margin-top: auto;
+}
+
+/* Pillars Strip */
+.pillars-section {
+  margin-top: var(--space-10);
+}
+
+.pillars-section__header {
+  text-align: center;
+  margin-bottom: var(--space-6);
+}
+
+.pillars-section__title {
+  font-size: 1.15rem;
+  color: var(--gold-bright);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-3);
+}
+
+.pillar-card {
+  padding: var(--space-4);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-left: 3px solid var(--border-medium);
+  transition: all var(--transition-fast);
+}
+
+.pillar-card:hover {
+  border-left-color: var(--gold-bright);
+  background: var(--bg-panel);
+}
+
+.pillar-card__icon {
+  font-size: 1.2rem;
+  margin-bottom: var(--space-2);
+  display: inline-block;
+}
+
+.pillar-card__name {
+  font-family: var(--font-epic);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--space-1);
+}
+
+.pillar-card__desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin: 0;
+}

@@ -1,0 +1,81 @@
+:root {
+  /* =========================================
+     CLOUDFORGE DESIGN TOKENS
+     Direction: Epic Pixel Architect
+     ========================================= */
+
+  /* Palette: Dark Forge & Deep Atmosphere */
+  --bg-void: #07090e;
+  --bg-surface: #0d121c;
+  --bg-panel: #131b29;
+  --bg-panel-hover: #1a2538;
+  --bg-panel-active: #202e47;
+
+  /* Borders & Separation */
+  --border-subtle: #1f2c40;
+  --border-medium: #2d3e5b;
+  --border-bright: #3f567c;
+
+  /* Forged Gold & Burnished Copper */
+  --gold-primary: #d49b28;
+  --gold-bright: #f5ba42;
+  --gold-dim: #8a6316;
+  --gold-shadow: #4d360a;
+
+  --copper-primary: #b45a2a;
+  --copper-bright: #d97036;
+  --copper-dim: #733413;
+
+  /* Runic Arcane & Azure Tech */
+  --runic-cyan: #2bb3f0;
+  --runic-bright: #67d4fc;
+  --runic-dim: #136287;
+  --runic-glow: rgba(43, 179, 240, 0.25);
+
+  /* Status Tokens */
+  --status-success: #34d399;
+  --status-success-dim: #065f46;
+  --status-warning: #fbbf24;
+  --status-warning-dim: #78350f;
+  --status-danger: #f87171;
+  --status-danger-dim: #7f1d1d;
+
+  /* High Legibility Typography Tokens */
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #8da2be;
+  --text-gold: #f5ba42;
+  --text-cyan: #38bdf8;
+  --text-copper: #d97036;
+
+  /* Fonts */
+  --font-epic: 'Cinzel', Georgia, serif;
+  --font-pixel: 'Silkscreen', monospace;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+  /* Spacing Scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  /* Pixel Shadows & Stepped Outlines (No blur, crisp edges) */
+  --pixel-shadow-sm: 2px 2px 0 0 #000;
+  --pixel-shadow-md: 4px 4px 0 0 #000;
+  --pixel-shadow-lg: 6px 6px 0 0 #000;
+  --pixel-shadow-gold: 3px 3px 0 0 var(--gold-shadow);
+  --pixel-shadow-runic: 3px 3px 0 0 #0a2736;
+
+  /* Layer Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+
+  /* Max Widths */
+  --container-max-width: 1200px;
+}

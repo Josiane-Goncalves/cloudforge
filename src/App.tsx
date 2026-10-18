@@ -1,0 +1,34 @@
+import React, { useState } from 'react';
+import { AppView } from './types/navigation';
+import { Layout } from './components/layout/Layout';
+import { HomePage } from './modules/home/HomePage';
+import { CodexPlaceholder } from './modules/codex/CodexPlaceholder';
+import { LabPlaceholder } from './modules/lab/LabPlaceholder';
+import { ProgressPlaceholder } from './modules/progress/ProgressPlaceholder';
+
+export const App: React.FC = () => {
+  const [currentView, setCurrentView] = useState<AppView>('home');
+
+  const renderActiveView = () => {
+    switch (currentView) {
+      case 'home':
+        return <HomePage onNavigate={setCurrentView} />;
+      case 'codex':
+        return <CodexPlaceholder />;
+      case 'lab':
+        return <LabPlaceholder />;
+      case 'progress':
+        return <ProgressPlaceholder />;
+      default:
+        return <HomePage onNavigate={setCurrentView} />;
+    }
+  };
+
+  return (
+    <Layout currentView={currentView} onNavigate={setCurrentView}>
+      {renderActiveView()}
+    </Layout>
+  );
+};
+
+export default App;

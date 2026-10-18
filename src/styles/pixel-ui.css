@@ -1,0 +1,202 @@
+/* =========================================
+   PIXEL UI COMPONENTS & ACCENTS
+   ========================================= */
+
+/* --- Pixel Cards & Frames --- */
+.pixel-card {
+  background: var(--bg-panel);
+  border: 1px solid var(--border-medium);
+  box-shadow: 
+    var(--pixel-shadow-md),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  position: relative;
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.pixel-card:hover {
+  border-color: var(--border-bright);
+}
+
+/* Stepped corner accents (pixel notch illusion) */
+.pixel-card--bordered {
+  border: 2px solid var(--border-medium);
+}
+
+.pixel-card--gold {
+  border-color: var(--gold-dim);
+  box-shadow: 
+    var(--pixel-shadow-md),
+    0 0 0 1px var(--gold-primary),
+    inset 0 0 15px rgba(212, 155, 40, 0.05);
+}
+
+.pixel-card--gold:hover {
+  border-color: var(--gold-primary);
+  box-shadow: 
+    var(--pixel-shadow-lg),
+    0 0 0 1px var(--gold-bright),
+    inset 0 0 20px rgba(212, 155, 40, 0.08);
+}
+
+.pixel-card--runic {
+  border-color: var(--runic-dim);
+  box-shadow: 
+    var(--pixel-shadow-md),
+    0 0 0 1px var(--runic-cyan),
+    inset 0 0 15px rgba(43, 179, 240, 0.05);
+}
+
+.pixel-card--runic:hover {
+  border-color: var(--runic-cyan);
+  box-shadow: 
+    var(--pixel-shadow-lg),
+    0 0 0 1px var(--runic-bright),
+    inset 0 0 20px var(--runic-glow);
+}
+
+/* --- Pixel Buttons --- */
+.pixel-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-5);
+  font-family: var(--font-epic);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  border: none;
+  background: var(--bg-panel);
+  color: var(--text-primary);
+  box-shadow: var(--pixel-shadow-sm);
+  transition: all var(--transition-fast);
+  user-select: none;
+  text-decoration: none;
+  position: relative;
+}
+
+.pixel-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0 0 0 0 #000;
+}
+
+.pixel-btn:focus-visible {
+  outline: 2px solid var(--runic-bright);
+  outline-offset: 2px;
+}
+
+/* Button Variants */
+.pixel-btn--gold {
+  background: linear-gradient(180deg, var(--gold-bright) 0%, var(--gold-primary) 100%);
+  color: #1a1202;
+  border: 1px solid var(--gold-dim);
+  box-shadow: 
+    var(--pixel-shadow-sm),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.pixel-btn--gold:hover {
+  background: linear-gradient(180deg, #ffe285 0%, var(--gold-bright) 100%);
+  color: #0d0901;
+}
+
+.pixel-btn--runic {
+  background: linear-gradient(180deg, var(--runic-bright) 0%, var(--runic-cyan) 100%);
+  color: #041b26;
+  border: 1px solid var(--runic-dim);
+  box-shadow: 
+    var(--pixel-shadow-sm),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.pixel-btn--runic:hover {
+  background: linear-gradient(180deg, #9ae6fd 0%, var(--runic-bright) 100%);
+  color: #020f14;
+}
+
+.pixel-btn--ghost {
+  background: transparent;
+  border: 1px solid var(--border-medium);
+  color: var(--text-secondary);
+}
+
+.pixel-btn--ghost:hover {
+  background: var(--bg-panel-hover);
+  border-color: var(--border-bright);
+  color: var(--text-primary);
+}
+
+.pixel-btn--active {
+  background: var(--bg-panel-active);
+  border-color: var(--gold-primary);
+  color: var(--gold-bright);
+  box-shadow: 
+    var(--pixel-shadow-sm),
+    0 0 8px rgba(212, 155, 40, 0.2);
+}
+
+/* Small Button Size */
+.pixel-btn--sm {
+  padding: var(--space-2) var(--space-3);
+  font-size: 0.75rem;
+}
+
+/* --- Badges --- */
+.pixel-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 3px 8px;
+  font-family: var(--font-pixel);
+  font-size: 0.65rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  border: 1px solid var(--border-medium);
+  background: var(--bg-surface);
+  color: var(--text-secondary);
+  box-shadow: 1px 1px 0 0 #000;
+}
+
+.pixel-badge--gold {
+  border-color: var(--gold-dim);
+  color: var(--gold-bright);
+  background: rgba(212, 155, 40, 0.08);
+}
+
+.pixel-badge--cyan {
+  border-color: var(--runic-dim);
+  color: var(--runic-cyan);
+  background: rgba(43, 179, 240, 0.08);
+}
+
+.pixel-badge--copper {
+  border-color: var(--copper-dim);
+  color: var(--copper-bright);
+  background: rgba(180, 90, 42, 0.08);
+}
+
+.pixel-badge--success {
+  border-color: var(--status-success-dim);
+  color: var(--status-success);
+  background: rgba(52, 211, 153, 0.08);
+}
+
+/* --- Decorative Rune Divider --- */
+.rune-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  margin: var(--space-6) 0;
+  color: var(--gold-dim);
+}
+
+.rune-divider::before,
+.rune-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-medium), transparent);
+}

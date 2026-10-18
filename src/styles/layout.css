@@ -1,0 +1,129 @@
+/* =========================================
+   LAYOUT STYLES: HEADER, FOOTER, SHELL
+   ========================================= */
+
+/* --- Header --- */
+.cf-header {
+  background: rgba(13, 18, 28, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 2px solid var(--border-medium);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.cf-header__inner {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: var(--space-3) var(--space-4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.cf-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+}
+
+.cf-brand__logo {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-panel);
+  border: 1px solid var(--gold-dim);
+  box-shadow: 2px 2px 0 0 #000;
+  color: var(--gold-bright);
+}
+
+.cf-brand__titles {
+  display: flex;
+  flex-direction: column;
+}
+
+.cf-brand__name {
+  font-family: var(--font-epic);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: 0.1em;
+  line-height: 1.1;
+  text-shadow: 0 0 10px rgba(212, 155, 40, 0.3);
+}
+
+.cf-brand__tagline {
+  font-family: var(--font-pixel);
+  font-size: 0.6rem;
+  color: var(--gold-bright);
+  letter-spacing: 0.08em;
+}
+
+/* Navigation */
+.cf-nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.cf-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: var(--space-2);
+}
+
+.cf-header__status {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+/* --- Footer --- */
+.cf-footer {
+  background: var(--bg-surface);
+  border-top: 1px solid var(--border-subtle);
+  padding: var(--space-8) var(--space-4) var(--space-6);
+  margin-top: auto;
+}
+
+.cf-footer__inner {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  text-align: center;
+}
+
+.cf-footer__quote {
+  font-family: var(--font-epic);
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.04em;
+  max-width: 680px;
+}
+
+.cf-footer__meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}

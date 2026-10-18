@@ -1,0 +1,80 @@
+/* =========================================
+   TYPOGRAPHY - EPIC HEADERS & CLEAN TECH BODY
+   ========================================= */
+
+body {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings: Epic & Grand */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-epic);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+h1 {
+  font-size: clamp(1.8rem, 4vw, 2.75rem);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+  font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.05rem;
+  letter-spacing: 0.05em;
+}
+
+p {
+  margin: 0 0 var(--space-4) 0;
+  color: var(--text-secondary);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* Accent Typographies */
+.font-epic {
+  font-family: var(--font-epic);
+}
+
+.font-pixel {
+  font-family: var(--font-pixel);
+  letter-spacing: 0.05em;
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Highlighting Colors */
+.text-gold {
+  color: var(--gold-bright);
+}
+
+.text-cyan {
+  color: var(--runic-cyan);
+}
+
+.text-copper {
+  color: var(--copper-bright);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
