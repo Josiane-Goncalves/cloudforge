@@ -51,7 +51,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             <PixelBadge variant="gold">SANCTUM DO ARQUITETO • SAA-C03</PixelBadge>
           </div>
           <h1 className="home-hero__title">
-            Forje Arquiteturas Resilientes na Nuvem
+            Forge Arquiteturas Resilientes na Nuvem
           </h1>
           <p className="home-hero__subtitle">
             Aprenda a selecionar, combinar e defender decisões arquiteturais com base nos padrões

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { AppView } from './types/navigation';
 import { Layout } from './components/layout/Layout';
 import { HomePage } from './modules/home/HomePage';
-import { CodexPlaceholder } from './modules/codex/CodexPlaceholder';
+import { CodexPage } from './modules/codex/CodexPage';
 import { LabPlaceholder } from './modules/lab/LabPlaceholder';
 import { ProgressPlaceholder } from './modules/progress/ProgressPlaceholder';
 
@@ -14,7 +14,7 @@ export const App: React.FC = () => {
       case 'home':
         return <HomePage onNavigate={setCurrentView} />;
       case 'codex':
-        return <CodexPlaceholder />;
+        return <CodexPage />;
       case 'lab':
         return <LabPlaceholder />;
       case 'progress':
