@@ -185,13 +185,15 @@ export function evaluateMission001(submission: Mission001Submission): MissionEva
   let costSatisfied = false;
   let costExplanation = '';
 
-  if (hasVpc) {
-    costExplanation =
-      'Embora a criação de uma VPC não gere cobrança adicional direta por si só, arquitetar uma VPC para um site estático pode incentivar o acoplamento futuro de recursos pagos desnecessários (como NAT Gateways ou instâncias EC2), fugindo do padrão serverless enxuto.';
-  } else if (hasS3 && hasCloudFront) {
+  if (hasS3 && hasCloudFront) {
     costSatisfied = true;
-    costExplanation =
-      'A solução é altamente eficiente em custos: elimina servidores dedicados ociosos, aproveita o armazenamento de baixo custo do S3 e reduz custos de Data Transfer Out (DTO) do S3 através do cache nas Edge Locations do CloudFront.';
+    if (hasVpc) {
+      costExplanation =
+        'A solução aproveita o modelo serverless de S3 e CloudFront com custos mínimos e eliminação de servidores ociosos. A criação de uma VPC não possui cobrança adicional direta por si só, mas sua inclusão neste cenário é desnecessária do ponto de vista de simplicidade e operação.';
+    } else {
+      costExplanation =
+        'A solução é altamente eficiente em custos: elimina servidores dedicados ociosos, aproveita o armazenamento de baixo custo do S3 e reduz custos de Data Transfer Out (DTO) do S3 através do cache nas Edge Locations do CloudFront.';
+    }
   } else {
     costExplanation =
       'A arquitetura não está configurada para aproveitar o modelo serverless com cache de borda do CloudFront.';

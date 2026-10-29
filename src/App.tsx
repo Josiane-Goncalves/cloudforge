@@ -3,7 +3,7 @@ import { AppView } from './types/navigation';
 import { Layout } from './components/layout/Layout';
 import { HomePage } from './modules/home/HomePage';
 import { CodexPage } from './modules/codex/CodexPage';
-import { LabPlaceholder } from './modules/lab/LabPlaceholder';
+import { LabPage } from './modules/lab/LabPage';
 import { ProgressPlaceholder } from './modules/progress/ProgressPlaceholder';
 
 export const App: React.FC = () => {
@@ -16,7 +16,7 @@ export const App: React.FC = () => {
       case 'codex':
         return <CodexPage />;
       case 'lab':
-        return <LabPlaceholder />;
+        return <LabPage />;
       case 'progress':
         return <ProgressPlaceholder />;
       default:
